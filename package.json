@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "socat tcp-l:23,reuseaddr,fork exec:\"yarn start\",pty,setsid,setpgid,stderr,ctty,echo=0"
+    "server": "socat tcp-l:23,reuseaddr,fork exec:\"yarn start\",pty,setsid,setpgid,stderr,ctty,echo=1"
   },
   "dependencies": {
     "@babel/cli": "^7.17.10",
@@ -15,6 +15,7 @@
     "@babel/preset-react": "^7.17.12",
     "@babel/register": "^7.17.7",
     "ink": "^3.2.0",
+    "ink-text-input": "^4.0.3",
     "react": "^18.1.0"
   }
 }
